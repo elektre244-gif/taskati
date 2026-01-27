@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+class CoustemSplashScreen extends StatelessWidget {
+  const CoustemSplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -26,7 +25,6 @@ class SplashScreen extends StatelessWidget {
           color: Colors.grey.shade400,
         ),)
         ],
-      ),
-    );
+      );
   }
 }

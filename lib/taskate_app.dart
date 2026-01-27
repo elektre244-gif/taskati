@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features.dart/splash.dart/widget.dart/splash_screen.dart';
+import 'package:flutter_application_1/features.dart/splash.dart/splash_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TaskateApp extends StatelessWidget {
