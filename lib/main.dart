@@ -7,6 +7,6 @@ import 'package:hive_flutter/adapters.dart';
 void main()async {
  await Hive.initFlutter();
  Hive.registerAdapter(UserModelAdapter());
- await Hive.openBox<UserModelAdapter>(AppConstant.userBox);
+ await Hive.openBox<UserModel>(AppConstant.userBox);
   runApp(TaskateApp());
 }

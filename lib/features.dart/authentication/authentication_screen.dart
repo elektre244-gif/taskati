@@ -5,6 +5,7 @@ import 'package:flutter_application_1/core.dart/widget/app_constant.dart';
 import 'package:flutter_application_1/core.dart/widget/custom_bottom.dart';
 import 'package:flutter_application_1/features.dart/authentication/models/user_model.dart';
 import 'package:flutter_application_1/features.dart/authentication/widget/custom_text_field.dart';
+import 'package:flutter_application_1/features.dart/home_screen/home_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:image_picker/image_picker.dart';
@@ -17,6 +18,7 @@ class Authentication extends StatefulWidget {
 }
 
 class _AuthenticationState extends State<Authentication> {
+ final user =Hive.box<UserModel>(AppConstant.userBox).getAt;
   final ImagePicker picker = ImagePicker();
   XFile? image ;
   TextEditingController nameController=TextEditingController();
@@ -81,6 +83,7 @@ class _AuthenticationState extends State<Authentication> {
           
                 CustomBottom(name: 'Done',
                 onPressed: () {
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
                   Hive.box<UserModel>(AppConstant.userBox).add(UserModel(name: nameController.text, image: image?.path??""));
                 },
                 ),

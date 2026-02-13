@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class CustomBottom extends StatelessWidget {
   final String name;
   final void Function()? onPressed;
-  const CustomBottom({super.key, required this.name, this.onPressed, });
+  const CustomBottom({super.key, required this.name, this.onPressed,  });
 
   @override
   Widget build(BuildContext context) {
