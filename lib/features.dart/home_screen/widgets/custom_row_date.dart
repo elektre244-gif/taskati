@@ -24,7 +24,7 @@ class CustomRowDate extends StatelessWidget {
        ),
        
     SizedBox(width: 150.w,child: CustomBottom(name: 'AddTask',onPressed: (){
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>TaskScreen()));
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>AddTaskScreen()));
     }, ),),
 //     Divider(
 //   color: Colors.grey,

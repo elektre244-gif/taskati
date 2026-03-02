@@ -20,24 +20,5 @@ class _CustomListState extends State<CustomList> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-                  height: 50.h,
-                  child: ListView.separated(
-                  scrollDirection: Axis.horizontal
-                  ,itemBuilder: (context,index)=>InkWell(
-                    onTap: (){
-                      setState(() {
-                        activeIndex=index;
-            
-                      });
-                    },
-                    child: CircleAvatar(
-                      radius: 25.r,
-                      backgroundColor: taskColors[index],
-                      child:activeIndex==index? Icon(Icons.check,color: Colors.white,):null,
-                    ),
-                  ), separatorBuilder: (context,index)=>SizedBox(width: 10.h,), itemCount: taskColors.length),
-                )
-            ;
-  }
-}
+    return           Scaffold() ;
+  }}

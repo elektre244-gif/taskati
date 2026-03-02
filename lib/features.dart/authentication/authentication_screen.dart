@@ -79,12 +79,12 @@ class _AuthenticationState extends State<Authentication> {
           
                 Divider(),
           
-                CustomTextField(),
+                CustomTextField(controller: nameController,),
           
                 CustomBottom(name: 'Done',
                 onPressed: () {
                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
-                  Hive.box<UserModel>(AppConstant.userBox).add(UserModel(name: nameController.text, image: image?.path??""));
+                  Hive.box<UserModel>(AppConstant.userBox).put( 0,UserModel(name: nameController.text,image: image?.path ?? "",),);
                 },
                 ),
               ],

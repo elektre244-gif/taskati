@@ -3,8 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/features.dart/authentication/authentication_screen.dart';
 import 'package:flutter_application_1/features.dart/splash.dart/widget.dart/coustem_splash_screen.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key});
+  const CustomTextField({super.key, this.controller});
+  final TextEditingController? controller;
   
   @override
   Widget build(BuildContext context) {
     TextEditingController nameController=TextEditingController();
     return TextFormField(
-      controller:nameController,
+      controller:controller,
       decoration: InputDecoration(
         label: Text('Enter your Name'),
         labelStyle: TextStyle(

@@ -1,7 +1,10 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core.dart/widget/custom_circler_image.dart';
+import 'package:flutter_application_1/core.dart/widget/custom_user_text.dart';
 import 'package:flutter_application_1/features.dart/authentication/models/user_model.dart';
+import 'package:flutter_application_1/features.dart/updat_profile.dart/updat_profile_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
@@ -15,23 +18,20 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       children: [
         Expanded(child: Column(
-
           crossAxisAlignment: CrossAxisAlignment.start
           ,children: [
-          Text(userData?.name??"",style: TextStyle(
-              fontSize: 20.sp,
-              fontWeight: FontWeight.bold
-          ),),
+          InkWell(
+            onTap: () {
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>UpdateProfileScreen(userData: userData,)));
+            },
+            child: CustomUserText(userData: userData)
+          ),
           Text("Have a nice day",style: TextStyle(
             fontSize: 20.sp,
           ),)
         ],)),
 
-        CircleAvatar(
-          radius: 40.r,
-          backgroundImage:Image.file(File(userData?.image??"")).image ,
-        ),
-
+    CustomCirclerImage(userData: userData,radius: 40.sp,),
       ],
     );
   }
