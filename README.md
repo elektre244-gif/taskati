@@ -42,7 +42,7 @@ ________________________________________________________________________________
 Taskati follows a Feature-Based Clean Architecture structure:
 
 lib/
-│
+│ 
 ├── core/
 │
 └── features/
