@@ -1,16 +1,112 @@
-# flutter_application_1
+Taskati – Smart Task Manager
 
-A new Flutter project.
+A clean, scalable, and production-ready To-Do application built with Flutter following modern architecture principles.
 
-## Getting Started
+👨‍💻 Developer
 
-This project is a starting point for a Flutter application.
+Mohamed Zakarea
+Flutter Developer | Building Real-World Apps with Clean Architecture
 
-A few resources to get you started if this is your first Flutter project:
+📱 About The Project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Taskati is a task management application designed with scalability and maintainability in mind.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The app demonstrates how to structure a real-world Flutter project using feature-based architecture and local data persistence.
+
+This project reflects my journey in mastering Flutter development while applying professional coding standards.
+
+✨ Features
+
+✅ Create, Delete, and Complete Tasks
+
+👈 Swipe Left → Delete Task
+
+👉 Swipe Right → Mark as Completed
+
+📂 Filter Tasks (All – To Do – Completed)
+
+📅 Smart Date Picker (Past dates disabled)
+
+⏰ Time Validation (Start time must be before End time)
+
+👤 Profile Editing (Name & Profile Image)
+
+🌙 Instant Dark Mode Toggle
+
+💾 Persistent Local Storage using Hive
+
+🎬 Animated Task List
+
+💤 Custom Empty State UI
+
+🏗 Project Architecture
+
+Taskati follows a Feature-Based Clean Architecture structure:
+
+lib/
+│
+├── core/
+│
+└── features/
+    ├── splash/
+    ├── authentication/
+    ├── home/
+    ├── add_task/
+    └── profile/
+Architecture Layers
+
+UI Layer → Screens & Reusable Widgets
+
+Data Layer → Hive Models & Local Repository
+
+🛠 Tech Stack
+
+Flutter
+
+Hive (Local Database)
+
+image_picker
+
+flutter_screenutil
+
+intl
+
+google_fonts
+
+🎨 UI & UX Highlights
+
+Responsive layout across devices
+
+Smooth task insert & delete animations
+
+Clean & minimal user interface
+
+Color-coded tasks for better readability
+
+Global Light & Dark Theme support
+
+📌 Future Enhancements
+
+✏️ Task Editing
+
+📊 Productivity Analytics
+
+🔔 Local Notifications
+
+☁️ Cloud Synchronization
+
+🌍 Multi-language Support
+
+🎯 Learning Objectives
+
+This project helped me strengthen my skills in:
+
+Clean Architecture in Flutter
+
+Scalable Project Structure
+
+Local Storage with Hive
+
+Form Validation & Time Logic
+
+Theme Management
