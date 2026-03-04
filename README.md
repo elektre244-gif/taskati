@@ -1,4 +1,4 @@
-Taskati – Smart Task Manager
+## Taskati – Smart Task Manager
 
 A clean, scalable, and production-ready To-Do application built with Flutter following modern architecture principles.
 
