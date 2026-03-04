@@ -1,21 +1,19 @@
-## Taskati – Smart Task Manager
-
+## 🚀 Taskati – Smart Task Manager
 A clean, scalable, and production-ready To-Do application built with Flutter following modern architecture principles.
-
-👨‍💻 Developer
-
+__________________________________________________________________________________________________
+##👨‍💻 Developer
 Mohamed Zakarea
 Flutter Developer | Building Real-World Apps with Clean Architecture
-
-📱 About The Project
+__________________________________________________________________________________________________
+## About The Project
 
 Taskati is a task management application designed with scalability and maintainability in mind.
 
 The app demonstrates how to structure a real-world Flutter project using feature-based architecture and local data persistence.
 
 This project reflects my journey in mastering Flutter development while applying professional coding standards.
-
-✨ Features
+__________________________________________________________________________________________________
+## ✨ Features
 
 ✅ Create, Delete, and Complete Tasks
 
@@ -38,8 +36,8 @@ This project reflects my journey in mastering Flutter development while applying
 🎬 Animated Task List
 
 💤 Custom Empty State UI
-
-🏗 Project Architecture
+___________________________________________________________________________________________________
+## 🏗 Project Architecture
 
 Taskati follows a Feature-Based Clean Architecture structure:
 
@@ -58,8 +56,8 @@ Architecture Layers
 UI Layer → Screens & Reusable Widgets
 
 Data Layer → Hive Models & Local Repository
-
-🛠 Tech Stack
+__________________________________________________________________________________________________
+## 🛠 Tech Stack
 
 Flutter
 
@@ -72,8 +70,8 @@ flutter_screenutil
 intl
 
 google_fonts
-
-🎨 UI & UX Highlights
+_________________________________________________________________________________________________
+## 🎨 UI & UX Highlights
 
 Responsive layout across devices
 
@@ -84,8 +82,8 @@ Clean & minimal user interface
 Color-coded tasks for better readability
 
 Global Light & Dark Theme support
-
-📌 Future Enhancements
+_________________________________________________________________________________________________
+## 📌 Future Enhancements
 
 ✏️ Task Editing
 
